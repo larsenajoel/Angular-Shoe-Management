@@ -1,0 +1,23 @@
+<h3>
+    Update Shoe
+</h3>
+<form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+        <label> Shoe Name</label>
+        <input type="text" class="form-control" id="name"
+            [(ngModel)] = "shoe.name" name="shoeName">
+    </div>
+    <div class="form-group">
+        <label> Seller</label>
+        <input type="text" class="form-control" id="seller"
+            [(ngModel)] = "shoe.seller" name="shoeSeller">
+    </div>
+    <div class="form-group">
+        <label> Buyer</label>
+        <input type="text" class="form-control" id="buyer"
+            [(ngModel)] = "shoe.buyer" name="shoeBuyer">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
